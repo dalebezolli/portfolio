@@ -1,0 +1,39 @@
+/* RESET */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+button, input, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* GENERAL */
+:root {
+    --color-primary-400: #6FFAFF;
+    --color-netural-100: #E9EAEC;
+    --color-netural-200: #D6DAE0;
+    --color-netural-400: #9EA2A9;
+    --color-netural-800: #15181E;
+    --color-netural-900: #0D0F13;
+
+    --ff-primary: 'Poppins', sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 500;
+    --fw-black: 600;
+}
