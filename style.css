@@ -197,6 +197,86 @@ body {
     fill: var(--color-netural-200);
 }
 
+/* About */
+.about-container {
+    margin-block: var(--spacing-4x);
+
+    display: flex;
+    gap: var(--spacing-4x);
+}
+
+.about-me,
+.skills-container {
+    flex-basis: 100%;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2x);
+}
+
+.about-me__title {
+    color: var(--color-netural-200);
+    font-size: 2rem;
+    font-weight: var(--fw-bold);
+}
+
+.about-me__paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2x);
+}
+
+.about-me__paragraph {
+    line-height: 1.7;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2x);
+}
+
+.skills-container__title {
+    color: var(--color-netural-200);
+    font-size: 2rem;
+    font-weight: var(--fw-bold);
+}
+
+.skills-container__skill-lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1x);
+}
+
+.skill-list__title {
+    color: var(--color-netural-200);
+    font-weight: var(--fw-bold);
+}
+
+.skill-list__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    list-style: none;
+}
+
+.skill-list__list-item {
+    display: flex;
+    gap: 8px;
+}
+
+.skill-list__list-item-icon {
+    fill: var(--color-netural-400);
+}
+
 /* A11Y */
 .sr-only:not(:focus):not(:active) {
     clip: rect(0 0 0 0);
