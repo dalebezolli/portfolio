@@ -104,10 +104,16 @@ body {
     justify-content: space-between;
 }
 
-.logo {
+.logo a {
     font-size: 2rem;
     font-weight: var(--fw-bold);
     color: var(--color-netural-100);
+
+    text-decoration: none;
+}
+
+.logo a:where(:hover, :focus) {
+    color: var(--color-primary-400);
 }
 
 .site-navigation__list {
