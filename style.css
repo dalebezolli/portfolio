@@ -119,6 +119,7 @@ body {
     margin-bottom: var(--spacing-4x);   
 
     display: flex;
+    gap: var(--spacing-1x);
     justify-content: space-between;
 }
 
