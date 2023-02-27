@@ -45,6 +45,10 @@ p, h1, h2, h3, h4, h5, h6 {
     --br-regular: .5rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--color-netural-900);
 
