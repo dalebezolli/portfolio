@@ -83,18 +83,16 @@ body {
     padding-inline: var(--spacing-1x);
 }
 
-.sticky {
+.centered-container--sticky {
     position: sticky;
     top: 0;
 
     height: 100%;
-
-    background-color: var(--color-netural-900);
 }
 
 /* HEADER */
-.site-header {
-    padding-block: var(--spacing-4x) var(--spacing-2x);
+.header-barrier {
+    height: var(--spacing-4x);
 }
 
 .site-header__row {
@@ -135,6 +133,11 @@ body {
 .main-section {
     display: flex;
     flex-direction: column;
+}
+
+/* PERSONAL DESCRIPTION */
+.personal-description {
+    margin-bottom: var(--spacing-2x);
 }
 
 /* PROJECTS */
