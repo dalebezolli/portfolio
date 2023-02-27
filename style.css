@@ -114,6 +114,12 @@ body {
     color: var(--color-primary-400);
 }
 
+/* MAIN */
+.main-section {
+    display: flex;
+    flex-direction: column;
+}
+
 /* PROJECTS */
 .work-container {
     margin-bottom: var(--spacing-4x);   
