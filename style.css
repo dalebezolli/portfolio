@@ -69,7 +69,10 @@ body {
 }
 
 .centered-container {
-    margin-inline: var(--spacing-4x);
+    max-width: 1144px;
+
+    margin-inline: auto;
+    padding-inline: var(--spacing-1x);
 }
 
 /* HEADER */
