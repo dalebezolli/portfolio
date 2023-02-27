@@ -130,7 +130,8 @@ body {
 
     display: flex;
     gap: var(--spacing-1x);
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .project-card {
