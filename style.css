@@ -253,6 +253,8 @@ body {
 .skills-container__skill-lists {
     display: flex;
     justify-content: space-between;
+    gap: var(--spacing-2x) 8px;
+    flex-wrap: wrap;
 }
 
 .skill-list {
