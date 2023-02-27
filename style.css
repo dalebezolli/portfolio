@@ -283,6 +283,37 @@ body {
     fill: var(--color-netural-400);
 }
 
+/* CONTACT SECTION */
+.contact-section {
+    margin-block: var(--spacing-4x);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2x);
+}
+
+.contact-section__title {
+    font-size: 2rem;
+    font-weight: var(--fw-bold);
+}
+
+.contact-method {
+    max-width: 412px;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2x);
+}
+
+.contact-method__types {
+    display: flex;
+    gap: var(--spacing-2x);
+}
+
+.contact-method__types-icon {
+    fill: var(--color-netural-400);
+}
+
 /* A11Y */
 .sr-only:not(:focus):not(:active) {
     clip: rect(0 0 0 0);
