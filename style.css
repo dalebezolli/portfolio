@@ -126,7 +126,7 @@ body {
 
 .site-navigation__list-item-link {
     display: flex;
-    align-items: end;
+    align-items: center;
     height: 100%;
 
     font-weight: var(--fw-bold);
