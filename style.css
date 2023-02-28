@@ -99,7 +99,7 @@ body {
     height: var(--spacing-4x);
 }
 
-.site-header__row {
+.site-header {
     display: flex;
     justify-content: space-between;
 }
