@@ -72,10 +72,6 @@ body {
     opacity: .05;
 }
 
-.dots--sticky {
-    height: 27%;
-}
-
 .centered-container {
     max-width: 1144px;
 
