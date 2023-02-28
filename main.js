@@ -20,13 +20,3 @@ document.addEventListener('mousemove', (event) => {
       card.style = `--highlight-x: ${x - cardPos.left}px; --highlight-y: ${y - cardPos.top}px;`;
   }
 });
-
-for(let card of cards) {
-  card.addEventListener('mouseenter', (event) => {
-    event.target.classList.add('project-card--highlight');
-  });
-
-  card.addEventListener('mouseleave', (event) => {
-    event.target.classList.remove('project-card--highlight');
-  });
-}

@@ -30,7 +30,7 @@ p, h1, h2, h3, h4, h5, h6 {
     --color-netural-400: #9EA2A9;
     --color-netural-400-0_5: hsla(218, 6%, 64%, .5);
     --color-netural-800: hsl(220, 18%, 10%);
-    --color-netural-800-0_05: hsla(220, 18%, 10%, .05);
+    --color-netural-800-0_05: hsla(220, 18%, 10%, .5);
     --color-netural-900: #0D0F13;
 
     --ff-primary: 'Poppins', sans-serif;
@@ -184,8 +184,9 @@ body {
     background-color: var(--color-netural-800);
 }
 
-.project-card--highlight .project-card__information::before {
+.project-card__information::before {
     content: '';
+    opacity: 0;
     
     position: absolute;
     top: 0;
@@ -196,6 +197,12 @@ body {
 
     border-radius: var(--br-regular);
     background: radial-gradient(250px circle at var(--highlight-x) var(--highlight-y), var(--color-netural-800-0_05), transparent);
+
+    transition: opacity 500ms ease;
+}
+
+.project-card:hover .project-card__information::before {
+    opacity: 1;
 }
 
 .project-card__tags {
