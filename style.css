@@ -351,4 +351,15 @@ body {
     position: absolute;
     white-space: nowrap;
     width: 1px;
-  }
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 720px) {
+    .about-container {
+        flex-wrap: wrap;
+    }
+
+    .skills-container__skill-lists {
+        justify-content: space-between;
+    }
+}
