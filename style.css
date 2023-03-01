@@ -129,7 +129,10 @@ body {
 
 .site-navigation__list-item-link {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 0;
     height: 100%;
 
     font-weight: var(--fw-bold);
@@ -137,9 +140,26 @@ body {
     color: var(--color-netural-400);
 }
 
+.site-navigation__list-item-link-text {
+    transition: transform 250ms ease;
+}
 
-.site-navigation__list-item-link:where(:hover, :focus) {
+
+.site-navigation__list-item-link:where(:hover, :focus) .site-navigation__list-item-link-text{
+    transform: translateY(-4px);
+
     color: var(--color-primary-400);
+}
+
+.site-navigation__list-item-underline {
+    width: 50%;
+    height: 2px;
+
+    background-color: transparent;
+}
+
+.site-navigation__list-item-link:where(:hover, :focus) .site-navigation__list-item-underline {
+    background-color: var(--color-primary-400);
 }
 
 /* MAIN */
