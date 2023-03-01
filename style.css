@@ -175,7 +175,7 @@ body {
 
 /* PROJECTS */
 .work-container {
-    margin-bottom: var(--spacing-4x);   
+    padding-bottom: var(--spacing-4x);   
 
     display: flex;
     gap: var(--spacing-1x);
@@ -314,7 +314,7 @@ body {
 
 /* About */
 .about-container {
-    margin-block: var(--spacing-4x);
+    padding-block: var(--spacing-4x);
 
     display: flex;
     gap: var(--spacing-4x);
@@ -393,9 +393,9 @@ body {
     fill: var(--color-netural-400);
 }
 
-/* CONTACT SECTION */
-.contact-section {
-    margin-block: var(--spacing-4x);
+/* CONTACT */
+.contact-container {
+    padding-block: var(--spacing-4x);
 
     display: flex;
     flex-direction: column;
