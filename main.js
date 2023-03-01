@@ -27,4 +27,14 @@ let siteNavigation = document.querySelector('.site-navigation');
 hamburgerButton.addEventListener('touchend', (event) => {
   let open = siteNavigation.getAttribute('data-open') === 'true';
   siteNavigation.setAttribute('data-open', !open);
-})
+});
+
+siteNavigation.querySelectorAll('.site-navigation__list-item-link').forEach(element => {
+  element.addEventListener('touchstart', (event) => {
+    if(event.currentTarget.tagName !== 'A') return;
+
+    setTimeout(() => {
+      siteNavigation.setAttribute('data-open', false);
+    }, 500);
+  });
+});
