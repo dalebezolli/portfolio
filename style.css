@@ -210,6 +210,34 @@ body {
     opacity: 1;
 }
 
+.project-card__image-container {
+    position: relative;
+    
+    width: 290px;
+    height: 210px;
+
+    overflow: hidden;
+
+    border-radius: var(--br-regular);
+}
+
+.project-card__image {
+    width: 290px;   
+
+    border-radius: var(--br-regular);
+}
+
+.project-card__image:nth-child(2) {
+    position: absolute;
+    top: -210px;
+
+    transition: top 500ms ease;
+}
+
+.project-card:hover .project-card__image:nth-child(2) {
+    top:0;
+}
+
 .project-card__tags {
     display: flex;
     gap: 8px;
