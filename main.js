@@ -20,3 +20,11 @@ document.addEventListener('mousemove', (event) => {
       card.style = `--highlight-x: ${x - cardPos.left}px; --highlight-y: ${y - cardPos.top}px;`;
   }
 });
+
+// Navigation control
+let hamburgerButton = document.querySelector('.hamburger');
+let siteNavigation = document.querySelector('.site-navigation');
+hamburgerButton.addEventListener('touchend', (event) => {
+  let open = siteNavigation.getAttribute('data-open') === 'true';
+  siteNavigation.setAttribute('data-open', !open);
+})
