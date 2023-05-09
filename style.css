@@ -333,14 +333,14 @@ body {
 }
 
 .about-me,
-.skills-container {
+.about-me__illustration-container {
     flex-basis: 100%;
 }
 
 .about-me {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-2x);
+    gap: var(--spacing-4x);
 }
 
 .about-me__title {
@@ -359,7 +359,24 @@ body {
     line-height: 1.7;
 }
 
+.about-me__paragraph--highlight {
+    color: var(--color-primary-400);
+}
+
+.about-me__illustration-container {
+    display: grid;
+    place-items: center;
+}
+
+.developer-illustration {
+    width: 90%;
+}
+
+
+/* Skills */
 .skills-container {
+    margin-block: var(--spacing-4x);   
+
     display: flex;
     flex-direction: column;
     gap: var(--spacing-2x);
