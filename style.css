@@ -291,6 +291,9 @@ body {
 }
 
 .project-card__controls {
+    position: relative;
+    z-index: 10;
+
     display: flex;
     gap: var(--spacing-2x);
 }
@@ -310,6 +313,15 @@ body {
 
 .project-card__control-button-icon {
     fill: var(--color-netural-200);
+}
+
+.project-card__control-button:where(:hover, :focus) {
+    color: var(--color-primary-400);
+    cursor: pointer;
+}
+
+.project-card__control-button:where(:hover, :focus) .project-card__control-button-icon {
+    fill: var(--color-primary-400);
 }
 
 /* About */
