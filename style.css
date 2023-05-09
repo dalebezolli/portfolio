@@ -292,7 +292,7 @@ body {
 
 .project-card__controls {
     display: flex;
-    gap: var(--spacing-1x);
+    gap: var(--spacing-2x);
 }
 
 .project-card__control-button {
