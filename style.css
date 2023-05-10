@@ -144,6 +144,21 @@ body {
     color: var(--color-netural-400);
 }
 
+.site-navigation__list-item-button {
+    display: flex;
+    padding: .5rem 1rem;
+
+    background-color: var(--color-primary-400);
+    border: 2px solid var(--color-primary-400);
+    border-radius: var(--br-regular);
+
+    font-weight: var(--fw-black);
+    text-decoration: none;
+    color: var(--color-netural-900);
+
+    transition: color .25s ease, background-color .25s ease;
+}
+
 .site-navigation__list-item-link-text {
     transition: transform 250ms ease;
 }
@@ -153,6 +168,24 @@ body {
     transform: translateY(-4px);
 
     color: var(--color-primary-400);
+}
+
+.site-navigation__list-item-button:where(:hover, :focus) {
+    background-color: transparent;
+    color: var(--color-primary-400);
+    animation: shake .5s 1;
+}
+
+@keyframes shake {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1.1) rotate(5deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
 }
 
 .site-navigation__list-item-underline {
