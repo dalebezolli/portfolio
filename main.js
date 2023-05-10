@@ -52,10 +52,10 @@ const FRAME_DIFF = 1000 / FRAME_RATE;
 const SEPARATION = 35;
 const OFFSET_X = 10;
 const OFFSET_Y = 25;
-const COUNT = 50;
+let COUNT = Math.ceil(Math.max(window.innerWidth, window.innerHeight) / SEPARATION);
 
 const LOWER_RANGE = .005;
-const UPPER_RANGE = .3;
+const UPPER_RANGE = .2;
 const INITIAL_VALUE = .01;
 const INCREASE_BRIGHTNESS_PERCENTILE = .98;
 
