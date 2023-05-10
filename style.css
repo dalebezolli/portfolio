@@ -379,7 +379,7 @@ body {
 
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-2x);
+    gap: var(--spacing-4x);
 }
 
 .skills-container__title {
@@ -390,7 +390,7 @@ body {
 
 .skills-container__skill-lists {
     display: flex;
-    gap: var(--spacing-2x) 8px;
+    gap: var(--spacing-2x) var(--spacing-4x);
     flex-wrap: wrap;
 }
 
@@ -428,7 +428,7 @@ body {
 
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-2x);
+    gap: var(--spacing-4x);
 }
 
 .contact-section__title {
