@@ -333,7 +333,7 @@ body {
 
 .project-card__controls {
     position: relative;
-    z-index: 10;
+    z-index: 5;
 
     margin-top: auto;
 
