@@ -497,6 +497,10 @@ body {
     fill: var(--color-netural-400);
 }
 
+.contact-method__types-link:where(:hover, :focus) .contact-method__types-icon{
+    fill: var(--color-primary-400);
+}
+
 /* A11Y */
 .sr-only:not(:focus):not(:active) {
     clip: rect(0 0 0 0);
