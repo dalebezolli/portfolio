@@ -352,6 +352,7 @@ body {
     background-color: transparent;
 
     color: var(--color-netural-200);
+    text-decoration: none;
 }
 
 .project-card__control-button-icon {
