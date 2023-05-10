@@ -228,6 +228,8 @@ body {
 }
 
 .project-card__border {
+    height: 100%;
+
     padding: 1px;
 
     border-radius: var(--br-regular);
@@ -235,6 +237,8 @@ body {
 }
 
 .project-card__information {
+    height: 100%;
+
     position: relative;
 
     display: flex;
@@ -271,7 +275,6 @@ body {
     position: relative;
     
     width: 290px;
-    height: 210px;
 
     overflow: hidden;
 
@@ -297,6 +300,7 @@ body {
 
 .project-card__tags {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
 }
 
@@ -330,6 +334,8 @@ body {
 .project-card__controls {
     position: relative;
     z-index: 10;
+
+    margin-top: auto;
 
     display: flex;
     gap: var(--spacing-2x);
