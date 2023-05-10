@@ -67,15 +67,6 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-
-    width: 100vw;
-    height: 100vh;
-
-    background-image: url('./public/img/dot.png');
-    background-size: 2rem;
-    background-position: 55% 100%;
-
-    opacity: .05;
 }
 
 .centered-container {

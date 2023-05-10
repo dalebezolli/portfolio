@@ -38,3 +38,65 @@ siteNavigation.querySelectorAll('.site-navigation__list-item-link').forEach(elem
     }, 500);
   });
 });
+
+// Dots generation
+let canvas = document.querySelector('.dots');
+let ctx = canvas.getContext('2d');
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const FRAME_RATE = 30;
+const FRAME_DIFF = 1000 / FRAME_RATE;
+
+const SEPARATION = 35;
+const OFFSET_X = 10;
+const OFFSET_Y = 25;
+const COUNT = 50;
+
+const LOWER_RANGE = .005;
+const UPPER_RANGE = .3;
+const INITIAL_VALUE = .01;
+const INCREASE_BRIGHTNESS_PERCENTILE = .98;
+
+const brightnessArray = new Array(COUNT * COUNT);
+for(let x = 0; x < COUNT; x++) {
+  for(let y = 0; y < COUNT; y++) {
+    brightnessArray[x * COUNT + y] = INITIAL_VALUE;
+  }
+}
+
+let now;
+let prev;
+
+function renderDots() {
+  now = Date.now();
+  let diff = now - prev;
+
+  if(diff >= FRAME_DIFF) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for(let x = 0; x < COUNT; x++) {
+      for(let y = 0; y < COUNT; y++) {
+        let brightnessArrayPosition = x * COUNT + y;
+
+        if(Math.random() > INCREASE_BRIGHTNESS_PERCENTILE && brightnessArray[brightnessArrayPosition] <= UPPER_RANGE) {
+          brightnessArray[brightnessArrayPosition] = brightnessArray[brightnessArrayPosition] + .04;
+        } else if(brightnessArray[brightnessArrayPosition] > LOWER_RANGE) {
+          brightnessArray[brightnessArrayPosition] = brightnessArray[brightnessArrayPosition] - .001;
+        }
+
+        ctx.beginPath();
+        ctx.arc(Math.floor(x * SEPARATION + OFFSET_X), Math.floor(y * SEPARATION + OFFSET_Y), 1 * (brightnessArray[brightnessArrayPosition] + 1), 0, 2 * Math.PI);
+        ctx.fillStyle = `rgba(255, 255, 255, ${brightnessArray[brightnessArrayPosition]})`;
+        ctx.fill();
+      }
+    }
+
+    prev = now;
+  }
+
+  requestAnimationFrame(renderDots);
+}
+
+prev = Date.now();
+renderDots();
