@@ -9,6 +9,10 @@ html, body {
     min-height: 100vh;
 }
 
+body {
+    line-height: 1.7;
+}
+
 img, picture, svg, video {
     display: block;
     max-width: 100%;
